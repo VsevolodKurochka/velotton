@@ -1,0 +1,32 @@
+.benefit{
+	&__row{
+		margin-bottom: 45px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:nth-child(odd){
+			flex-direction: row-reverse;
+		}
+	}
+	&__title{
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	@include resp-max(sm){
+		&__column{
+			&_image{
+				margin-bottom: 30px;
+			}
+		}
+	}
+	@include resp-min(sm){
+		&__row{
+			align-items: center;
+		}
+	}
+	@include resp-min(md){
+		&__row{
+			margin-bottom: 100px;
+		}
+	}
+}

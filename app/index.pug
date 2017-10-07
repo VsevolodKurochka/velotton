@@ -1,0 +1,194 @@
+extends includes/layout
+block variables
+	- var title = "4-Д карты виртуальной реальности";
+	- var description = "4-Д карты виртуальной реальности";
+block content
+	+b.SECTION.vsection#section-description
+		.vcontainer
+			.vrow.min-sm-x-center
+				.vak-12.vak-sm-8.vak-md-6.vak-lg-5.text-center
+					h3.vtitle-small.offset-static-md AR Animal - идеальный путь для образования детей
+					.content
+						p Fancy ZOO - это интерактивная система, которая выходит за рамки того, что вы видите в традиционных играх. Объединяет электронную игру с физическими картами и помогает вовлечь детей и заинтересовать их в обучении.
+						p Fancy ZOO - это интерактивная система, которая выходит за рамки того, что вы видите в традиционных играх. Объединяет электронную игру с физическими картами и помогает вовлечь детей и заинтересовать их в обучении.
+	+b.SECTION.video.vsection
+		.vcontainer
+			.vrow.min-sm-y-center.min-sm-x-center
+				.vak-12.vak-sm-8.vak-lg-6
+					+b.IFRAME.iframe._default(src="https://www.youtube.com/embed/KbZwRGXzDXU")
+				.vak-12.vak-sm-4
+					+b.FORM.vform._block._border(action="application.php" method="POST")
+						+e.header
+							+e.title Заказать 4-Д карты
+						+e.content
+							+e.row
+								+b.INPUT.vform-control(type="text" placeholder="Имя" name="vname")
+							+e.row
+								+b.INPUT.vform-control(type="text" placeholder="Телефон" name="vphone")
+							+e.row
+								+b.BUTTON.vbtn._block._large._brand-1.effect._bounce-top(type="submit") Получить
+	+b.SECTION.benefit.vsection._big.bg-grey
+		.vcontainer
+			h3.vtitle.text-center.offset-extra Виртуальная реальность - будущее образования и жизни
+			+e.content
+				+e.row.vrow
+					+e.column._image.vak-12.vak-sm-6
+						img(src="img/benefit1.png")
+					+e.column._text.vak-12.vak-sm-6
+						+e.text
+							+e.P.title.vtitle-small ИНТЕРАКТИВНОСТЬ
+							+e.body
+								p Обучение намного лучше, когда дети веселятся. Если ребенок проводит время в смарт фоне пусть это будет время, когда он не просто играет но и изучает новый материал и познает мир.
+				+e.row.vrow
+					+e.column._image.vak-12.vak-sm-6
+						img(src="img/benefit2.jpg")
+					+e.column._text.vak-12.vak-sm-6
+						+e.text
+							+e.P.title.vtitle-small НОВИНКА
+							+e.body
+								p Виртуальная (дополненная реальность) - это будущее и абсолютно новое поколение игрушек. Виртуальная реальность позволяет быстрей развиваться ребенку и быть в курсе изменений всех технических новинок в мире.
+				+e.row.vrow
+					+e.column._image.vak-12.vak-sm-6
+						img(src="img/benefit3.jpg")
+					+e.column._text.vak-12.vak-sm-6
+						+e.text
+							+e.P.title.vtitle-small ОБУЧЕНИЕ + 1 НОВЫЙ ЯЗЫК
+							+e.body
+								p Приложение сделано на 7 языка в том числе Русском и английском, что позволяем ребенку в игровой и легкой форме запоминать название более 68 животных на русском и английском языке.(По желанию и на других).
+	+b.SECTION.how.vsection._big
+		.vcontainer
+			h3.vtitle.text-center.offset-big Как это работает
+			.vrow.min-sm-x-center
+				+e.column.vak-12.vak-sm-6.vak-md-5
+					+b.point
+						p
+							span.bold Скачайте бесплатное приложение 
+							|"Funcy Zo" с App Store или Play Маркет;
+						p.bold или
+						p
+							|Отсканируйте 
+							span.bold QR-код, 
+							|расположенный на инструкции, либо на автомате;
+				+e.column.vak-12.vak-sm-6.vak-md-5
+					+b.point
+						p.bold Включите прилжение и положите карту перед смартфоном в течении 1 секунды на экране будут появляться изображения
+			.vrow.min-sm-x-center
+				+e.column.vak-12.vak-sm-6.vak-md-5
+					+b.point
+						p Нажимайте на экран и животные будут бежать, прыгать, издавать звуки
+				+e.column.vak-12.vak-sm-6.vak-md-5
+					+b.point
+						p.bold Наслаждайтесь захватывающими виртуальным миром
+	+b.SECTION.set.vsection._big.bg-grey
+		.vcontainer
+			.text-center.offset-big
+				p.bold.offset-static-md 68 КАРТ ЖИВОТНЫХ
+				h3.vtitle-big.text-center Что входит в набор FANCY ZOO
+			.text-center
+				+e.list
+					p 1. 10 карточек с динозаврами
+					p 2. 12 морских животных
+					p 3. 24 наземных животных
+					p 4. 13 птиц
+					p 5. 9 насекомых
+		+e.carousel.owl-carousel
+			+e.carousel-item
+				+e.IMG.carousel-item-img(src="img/slider1.jpg")
+			+e.carousel-item
+				+e.IMG.carousel-item-img(src="img/slider2.jpg")
+			+e.carousel-item
+				+e.IMG.carousel-item-img(src="img/slider3.jpg")
+			+e.carousel-item
+				+e.IMG.carousel-item-img(src="img/slider4.jpg")
+			+e.carousel-item
+				+e.IMG.carousel-item-img(src="img/slider5.jpg")
+			+e.carousel-item
+				+e.IMG.carousel-item-img(src="img/slider6.jpg")
+			+e.carousel-item
+				+e.IMG.carousel-item-img(src="img/slider7.jpg")
+	+b.SECTION.review.vsection._big
+		.vcontainer
+			.text-center.offset-big
+				h3.vtitle.text-center ОТЗЫВЫ РОДИТЕЛЕЙ
+			+e.content
+				+e.row.vrow
+					+e.column._image
+						+e.image-wrapper
+							+e.image(src="img/review1.jpg")
+					+e.column._text
+						+e.text
+							+e.P.name Тамара Хвостова
+							+e.body
+								p Очень долго думала перед тем, как купить. Купила - и очень довольны. Это реально игрушка будущего, даже не представляю, что будет дальше. Уверена, что всегда ребенок будет разбираться в новинках.
+				+e.row.vrow
+					+e.column._image
+						+e.image-wrapper
+							+e.image(src="img/review2.jpg")
+					+e.column._text
+						+e.text
+							+e.P.name Алексей Беньков
+							+e.body
+								p Купил сину на День рождения - теперь играем вместе с ним. Это только наше мужское время. Игрушка класс и для детей, и для папаш))
+				+e.row.vrow
+					+e.column._image
+						+e.image-wrapper
+							+e.image(src="img/review1.jpg")
+					+e.column._text
+						+e.text
+							+e.P.name Алексей Беньков
+							+e.body
+								p Купил сину на День рождения - теперь играем вместе с ним. Это только наше мужское время. Игрушка класс и для детей, и для папаш))
+	+b.SECTION.step.vsection._big.bg-grey
+		.vcontainer
+			h3.vtitle.text-center.offset-extra Как заказать
+			+e.content
+				.vrow
+					+e.column.vak-12.vak-sm-6.vak-md-3
+						+e.item
+							+e.header
+								+e.SPAN.number 1
+							+e.P.title Оставьте заявку
+							+e.body
+								p Оставьте заявку на сайте или позвоните на телефон.
+					+e.column.vak-12.vak-sm-6.vak-md-3
+						+e.item
+							+e.header
+								+e.SPAN.number 2
+							+e.P.title Уточнение данных
+							+e.body
+								p Менеджер в рабочее время уточнит данные для отправки.
+					+e.column.vak-12.vak-sm-6.vak-md-3
+						+e.item
+							+e.header
+								+e.SPAN.number 3
+							+e.P.title Оплата
+							+e.body
+								p На карту или наложеным платежом Новой почтой.
+					+e.column.vak-12.vak-sm-6.vak-md-3
+						+e.item
+							+e.header
+								+e.SPAN.number 4
+							+e.P.title Играть! Играть! Играть!
+							+e.body
+								p Играйте всей семьей.
+block dev
+	//+b.BUTTON.vbtn._large._border-brand-1.effect._bounce-top(data-action="vmodal" data-open="#form") Large button
+	+b.vmodal#form
+		+e.box._default
+			+e.header
+				+e.P.title GET
+				+e.BUTTON.close(data-close="vmodal") &times;
+			+e.body
+				+b.FORM.vform._block(action="mail.php" method="POST")
+					+e.content
+						+e.row._line
+							+b.INPUT.vform-control(type="text" placeholder="Имя" name="name")
+							+e.SPAN.line
+						+e.row._line
+							+b.INPUT.vform-control(type="text" placeholder="E-mail" name="email")
+							+e.SPAN.line
+						+e.row._line
+							+b.INPUT.vform-control(type="text" placeholder="Телефон" name="phone")
+							+e.SPAN.line
+						+e.row._btn
+							+b.BUTTON.vbtn._block._large._brand-1.effect._bounce-top(type="submit") Получить

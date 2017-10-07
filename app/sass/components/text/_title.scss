@@ -1,0 +1,19 @@
+%vtitle-default{
+	line-height: 1.2;
+}
+.vtitle{
+	font-size: 30px;
+	@include fs('vtitle');
+	@extend %vtitle-default;
+	&-small{
+		font-size: 20px;
+		@include fs('vtitle-small');
+		@extend %vtitle-default;
+	}
+	&-big{
+		font-size: 30px;
+		@include fs('vtitle-big');
+		@extend .bold !optional;
+		@extend %vtitle-default;
+	}
+}

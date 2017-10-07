@@ -1,0 +1,15 @@
+.video{
+	
+	@include resp-max(sm){
+		padding-top: 0;
+		.iframe{
+			margin-bottom: 30px;
+		}
+	}
+}
+.iframe{
+	width: 100%;
+	&_default{
+		min-height: 250px;
+	}
+}

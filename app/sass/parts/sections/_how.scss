@@ -1,0 +1,24 @@
+.how{
+	&__column{
+		margin-bottom: 30px;
+	}
+}
+.point{
+	position: relative;
+	padding-left: 30px;
+	&:before{
+		@include pseudo();
+		left: 0;
+		top: 5px;
+		width: 15px;
+		height: 15px;
+		border-radius: 100%;
+		background-color: setColor('brand-1');
+	}
+	p{
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
